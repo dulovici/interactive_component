@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+
+
+header {
+    background-image: url(./images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-attachment: fixed;
+    background-position: top left;
+    height: 449px;
+    padding-top: 67px;
+}
+
+header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 395px;
+    margin: 0 auto;
+    height: 147px;
+    background-image: url(./images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+
+    
+}
+    .content h1 {
+        text-align: center;
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .content p {
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+        color:  #848EAD;
+    }
+
+main {
+    max-width: 540px;
+    margin: -200px auto 0;
+    background-color:  #ffffff;
+    border-radius: 8px;    
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+    
+    
+}
+.top {
+    border-bottom: 1px solid rgb(207, 207, 207);
+    padding: 30px;
+}
+
+.picker {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+    .picker .views {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .picker .views p{
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: #848EAD;
+        font-weight: 800;
+    }
+    .picker .dpm {
+        width: 50%;
+        display: flex;
+        gap: 10px;
+    }
+        .picker .dpm h1 {
+            color: #293356;
+        }
+        .picker .dpm p {
+            color:  #848EAD;
+        }
+    .picker .slide-bar {
+        margin-top: 40px;
+        width: 100%;
+    }
+    
+/* ============================== */
+    .slide-bar {
+        width: 100%;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .slide-bar-input {
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      -webkit-appearance: none;
+      width: 100%;
+      height: 10px;
+      border-radius: 5px;
+      outline: none;
+      background-color: transparent;
+    }
+    .slide-bar-input:focus {
+      outline: none;
+    }
+    .bar {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 7px;
+      width: 100%;
+      height: 8px;
+      border-radius: 5px;
+      background-color: #ecf0fb;
+      overflow: hidden;
+    }
+    .fill {
+      display: block;
+      width: 50%;
+      height: 100%;
+      background-color: #a4f3eb ;
+      transition: all 0.2s ease;
+    }
+    .slide-bar-input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: grab;
+      background: #10d8c4 url(./images/icon-slider.svg) no-repeat
+        center;
+      box-shadow: -5px 18px 24px rgba(52, 230, 230, 0.432);
+      transition: 0.3s ease-in-out;
+    }
+    .slide-bar-input:hover::-webkit-slider-thumb {
+        background: #05c7c7 url(./images/icon-slider.svg) no-repeat
+        center;
+    }
+    .slide-bar-input:focus::-webkit-slider-thumb {
+        cursor: grabbing;
+        background: #05c7c7 url(./images/icon-slider.svg) no-repeat
+        center;
+    }
+/* ============================== */
+.discount-wr {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.container {
+    display: flex;
+    gap: 10px;
+}
+.container p {
+    font-size: 12px;
+    color:  #848EAD;;
+}
+.apl-dis-wr {
+    width: 43px;
+    height: 22px;
+    background-color: #CFD8EF;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.apl-dis-wr .circle {
+    width: 14px;
+    height: 14px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: relative;
+    right: 10px;
+}
+    .active {background-color: #7AEADF;}
+    .active .circle {left: 10px;}
+
+.dis-wr {
+    background-color: #FEEDE8;
+    border-radius: 9.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 19px;
+
+}
+.dis-wr p {
+    color: #FF8D68;
+}
+
+.bot {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bot ul {
+    list-style: none;
+}
+
+.bot ul li {
+    background: url('./images/icon-check.svg') no-repeat left ;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #848EAD;
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 170px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #293356;
+    border-radius: 20.5px;
+    font-size: 12px;
+    color: #BECDFF;
+    cursor: pointer;
+}
+.btn:hover {
+    color: whitesmoke;
+}
