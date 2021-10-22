@@ -236,3 +236,64 @@ main {
 .btn:hover {
     color: whitesmoke;
 }
+
+
+@media(max-width: 600px) {
+    .wrapper {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+
+    header {
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .content h1 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 13px;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .picker {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .picker .views {
+        order: 1;
+    }
+   
+    .picker .dpm {
+       width: 60%;
+       order: 3;
+       margin-bottom: 20px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+        
+    .picker .slide-bar {
+       order: 2;
+    }
+
+    .bot {
+        flex-direction: column;
+    }
+
+    .bot ul {
+        margin-bottom: 30px;
+    }
+
+    .bot ul li {
+        text-align: center;
+    }
+
+
+
+}
